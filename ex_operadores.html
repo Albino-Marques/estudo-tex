@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Lógica de Programação</title>
+</head>
+
+<body>
+    <h1>Lógica de Programação - Operadores</h1>
+
+    <script>
+        //Operadores
+
+        //[x]Operadores de Comparação:
+        let opC01 = 10
+        let opC02 = 15
+
+        console.log(opC01 > opC02)//Operador de Maior que (>) >> Saída = false
+        console.log(opC01 < opC02)//Operador de Menor que (<) >> Saída = true
+        console.log(opC01 >= opC02)//Operador de Maior ou Igual (>=) >> Saída = false
+        console.log(opC01 <= opC02)//Operador de Menor ou Igual (<=) >> Saída = true
+        console.log(opC01 === opC02)//Operador de Igualdade Restrita (===) >> Saída = false
+        console.log(opC01 == opC02)//Operador de Igualdade (==) >> Saída = false
+        console.log(opC01 = opC02)//Operador de Atribuição (=) >> Saída = 15
+
+        //[x]Operadores Lógicos:
+        let opL01 = 15
+        let opL02 = 20
+        let opL03 = true
+
+        console.log(opL01 >= opL02 && opL03)//Operador Lógico "E" (AND (&&)) >> Saída = false
+        console.log(opL02 >= opL01 || opL03)//Operador Lógico "OU" (OR (||)) >> Saída = true
+
+        //[x]Operadores Aritméticos
+        let opA01 = 15
+        let opA02 = 5
+        let opA03 = 35
+
+        console.log(opA01 + opA03) // Adição (+) // Saída = 50
+        console.log(opA03 - opA01) // Subtração (-) // Saída = 20
+        console.log(opA01 / opA02) // Divisão (/) // Saída = 3
+        console.log(opA01 * opA03) // Multiplicação (*) // Saída = 525
+        console.log(opA02 ** 2) // Potenciação (**) // Saída = 25
+
+        //[x]Acumulador
+        let opAcum01 = 15
+        let opAcum02 = 5
+        let acumulador = 0
+        let resultado = opAcum01 + opAcum02
+
+        acumulador = acumulador + resultado
+        console.log(acumulador)// Saída = 20
+        resultado = opAcum01 + opAcum02
+        acumulador = acumulador + resultado
+        console.log(acumulador)// Saída = 40
+        resultado = opAcum01 + opAcum02
+        acumulador = acumulador + resultado
+        console.log(acumulador)// Saída = 60
+        resultado = opAcum01 + opAcum02
+        acumulador = acumulador + resultado
+        console.log(acumulador)// Saída = 80
+
+
+        //[x]Incremento
+        let opInc01 = 15
+
+        console.log(++opInc01)//Colocando o ++ antes, já sairá com o valor atualizado. >> Saída = 16
+        console.log(opInc01++)//Colocando o ++ depois irá atualizar para o próximo evento >> Saída = 16
+        console.log(opInc01) // Saída = 17
+
+
+        //[x]Decremento
+        let opDec01 = 15
+
+        console.log(--opDec01)//Aqui, assim como no de Incremento, já sairá o valor atualizado por causa do -- no início. >> Saída = 14
+        console.log(opDec01--)//Colocando o -- depois, irá atualizar somente no próximo evento, assim como o incremento. >> Saída = 14
+        console.log(opDec01)// Saída = 13
+
+        //[x]Mod (módulo)
+        //É o que resta da divisão:
+        let opMod01 = 13
+        let opMod02 = 20
+
+        console.log(opMod01 % 2)// Aqui irá retornar 1 que vem a ser o resto da divisão do número 13 por 2. Excelente método para descobrir número pares e impares. 
+        console.log(opMod02 % 2)// Aqui irá retornar 0 que vem a ser o resto da divisão de 20 por 2. 
+        //Sempre que for feito a verificação de módulo por dois o retorno será 1 para impares e 0 para pares. 
+
+
+        //[x]Concatenação
+        let opConCat01 = 'Albino'
+        let opConCat02 = 'Marques'
+
+        console.log(opConCat01 + ' ' + opConCat02) // Operador de concatenação é o símbolo de (+) >> Saída = Albino Marques
+
+
+
+        //[x]String Literals(Template String)
+        let opTS01 = 'Albino Marques'
+        let opTS02 = 25
+
+        console.log(`Meu nome é ${opTS01}, tenho ${opTS02} anos e moro em Serafina Corrêa.`)// Template String ou String Literals serve para concatenar string com variáveis de diversos tipos de forma mais dinâmica.Usa-se a crase para tal. >> Saída =  Meu nome é Albino Marques, tenho 25 anos e moro em Serafina Corrêa.
+
+
+    </script>
+</body>
+
+</html>

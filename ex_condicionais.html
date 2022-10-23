@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Lógica de Programação</title>
+</head>
+
+<body>
+    <h1>Lógica de Programação - Condicionais</h1>
+
+    <script>
+        //Condicionais:
+
+        //[x] if:
+        let conIf01 = 'Condicionais'
+
+        if (conIf01 == 'Condicionais') {
+            console.log(`A aula de hoje é ${conIf01}`)
+        }
+        //O if é tratado para situações em que é possível resolver com menos condições, como no caso acima.
+        //Onde a sintaxe corresponde ao seguinte:
+        //Se (tal condição for atendida){Execute o que está dentro das chaves.}
+
+
+        //[x] if else:
+        let conIfElse = 'Operadores'
+
+        if (conIfElse == 'Condicionais') {
+            console.log(`A aula de hoje é ${conIf01}`)
+        } else {
+            console.log('Aguarde a próxima aula.')
+        }
+        //O if else é tratado para situações em que hajam mais condição, mas que a saída ainda seja rápida, como no caso acima.
+        //Onde a sintaxe corresponde ao seguinte:
+        //Se (tal condição for atendida){Execute o que está dentro das chaves.} senão {Execute esse trecho de código}
+
+        //[x] if encadeado: 
+        let conIfEnc = 'Operadores'
+        let modulo = 2
+
+        if (conIfEnc == 'Condicionais') {
+            console.log(`A aula de hoje é ${conIf01}`)
+        } else {
+            console.log('Aguarde a próxima aula.')
+            if (modulo >= 2) {
+                console.log(`Você está no módulo ${modulo}!`)
+            }
+
+        }
+
+        //[x] if simplificado (uma linha):
+        let conIfSimple = 'Condicionais'
+
+        if (conIfSimple == 'Condicionais') console.log('Isso ai, você está avançando!')
+        if (conIfSimple == 'Condicionais') {
+            console.log(`A aula de hoje é ${conIfSimple}`)
+        } else {
+            console.log('Aguarde a próxima aula.')
+        }
+
+        //[x] if else if:
+        let conIfElseIf = 'Operadores'
+
+        if (conIfElseIf == 'Condicionais') {
+            console.log(`A aula de hoje é ${conIfElseIf}`)
+        } else if (conIfElseIf == 'Operadores') {
+            console.log(`Aqui entrou o else if, e o valor é ${conIfElseIf}!`)
+        } else {
+            console.log('Aguarde a próxima aula.')
+        }
+
+        //O if else if é tratado para situações em que hajam mais condição, e que necessite explicitá-las.
+        //Onde a sintaxe corresponde ao seguinte:
+        //Se (tal condição for atendida){Execute o que está dentro das chaves.} Senão, se(essa outra condição então deve ser verificada, se ela for verdadeira) {Execute esse trecho de código} Senão {Execute isso em última instância.}
+
+
+        //[x] ternário:
+        modulo >= 2 ? console.log("Você está indo bem") : console.log('Bora programar!')
+
+        //O if ternário funciona similar ao simplificado, mas com maior funcionalidade e verbosidade. 
+        //A sintaxe corresponde ao seguinte:
+        //condição proposta é verdadeira ? se si, execute este código : se não execute esse.
+        //Onde a condição é proposta antes da interrogação, a interrogação serve como o if, e após ela vem o código a ser executado caso ela seja verdadeira. Se ela for falsa, os dois pontos servem como else, onde o código a seguir que será executado.
+
+
+
+        //[x] switch:
+        //Switch case é uma avaliação de caso. Pode ser várias coisas.
+        let mod01 = 7
+        switch (mod01) {
+            case 1: console.log(`O módulo tem valor de ${mod01}`)
+                break
+            case 2: console.log(`O módulo tem valor de ${mod01}`)
+                break
+            case 3: console.log(`O módulo tem valor de ${mod01}`)
+                break
+            case 4: console.log(`O módulo tem valor de ${mod01}`)
+                break
+            case 5: console.log(`O módulo tem valor de ${mod01}`)
+            default: console.log('Não há módulos em atividade.')
+        }
+        //O swith serve para fazer uma sequência de casos mesmo. Como no caso acima.
+        // A sintaxe pode-se interpretar da seguinte forma:
+        /*respectivo há (condição imposta) {faça:
+            caso a condição seja uma: execute este trecho de código
+            caso a condição seja outra: execute este trecho de código
+            caso ela seja ainda outra: execute este
+            caso a condição não esteja prevista : use este código.
+        }*/
+    </script>
+</body>
+
+</html>
